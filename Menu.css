@@ -134,4 +134,10 @@ footer {
         display : flex;
         flex-wrap : wrap;
     }
+    button a {
+        display : block;
+    }
+    footer {
+        margin-top : 10px;
+    }
 }
