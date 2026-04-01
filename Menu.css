@@ -102,3 +102,18 @@ footer {
     line-height: 30px;
     font-size: px;
 }
+
+@media (max-width : 600px) {
+    .row1 {
+        flex-direction: column;
+        align-items : center;
+    }
+    .box11 {
+        width : 90%;
+        margin : 10px auto;
+    }
+    .box11 img {
+        width : 100%;
+        height : auto;
+    }
+}
