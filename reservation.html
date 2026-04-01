@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Reservation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image : url("https://assets.architecturaldigest.in/photos/68fb25b6c7a4482e003c8b87/master/w_1600%2Cc_limit/Hosa%2520Gurugram%2520interior3.jpg");
+        }
+
+        .container {
+            width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px gray;
+	    height : 90%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+	    padding-right : 0px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+	    margin : 10px;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            cursor: pointer;
+	    margin : 10px; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox input {
+            width: auto;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Table Reservation 🗓️</h2>
+
+    <form action="action.php">
+
+        <label>Full Name:</label>
+        <input type="text" required>
+
+        <label>Mobile Number:</label>
+        <input type="tel" required>
+
+        <label>Email:</label>
+        <input type="email">
+
+        <label>Date:</label>
+        <input type="date" required>
+
+        <label>Time:</label>
+        <input type="time" required>
+
+        <label>Number of Guests:</label>
+        <input type="number" min="1" max="20" required>
+
+        <label>Table Type:</label>
+        <select>
+            <option>Indoor</option>
+            <option>Outdoor</option>
+            <option>AC</option>
+            <option>Non-AC</option>
+        </select>
+
+        <label>Occasion:</label>
+        <select>
+            <option>None</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Other</option>
+        </select>
+
+        <label>Special Requests:</label>
+        <textarea rows="3"></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox">
+            <label>I confirm the booking details</label>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Book">
+            <input type="reset" value="Cancel">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
