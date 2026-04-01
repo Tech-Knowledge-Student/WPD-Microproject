@@ -130,7 +130,7 @@ footer {
         align-items : center;
         height : auto;
     }
-    nav {
+    nav ul {
         display : flex;
         flex-wrap : wrap;
     }
